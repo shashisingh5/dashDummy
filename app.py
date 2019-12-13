@@ -4,9 +4,7 @@ import dash_html_components as html
 import plotly.graph_objs as go
 import pandas as pd
 
-import os
-port = int(os.environ.get('PORT', 5000))
-app.run(host='0.0.0.0', port=port, debug=True)
+
 app = dash.Dash()
 dragonData=pd.read_excel("https://github.com/shashisingh5/dashDummy/blob/master/Dragon_details.xlsx?raw=true");
 
